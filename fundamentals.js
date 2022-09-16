@@ -1,5 +1,10 @@
 const aCar = {
   owner : 'Joe Bloggs',
+  address : '3 Walkers Lane',
+  privious_owners: [
+    { name : ' pat Smith', address : '1 Main Street'},
+    { name : ' Sheila Dwyer', address : '2 High Street'}
+  ],
   type :{
     Make: 'Toyota',
     Model: 'Corolla',
@@ -15,5 +20,6 @@ const aCar = {
 };
 
 console.log(aCar.owner);
-console.log(aCar.owner+' drives a '+aCar.type.Make)
-console.log("It is a " + aCar.type.colour.exterior+" car, " + aCar.type.milage +" milage, with "  + aCar.type.colour.interior.texture + " interior.")
+console.log(aCar.owner+' drives a '+aCar.type.Make);
+console.log("It is a " + aCar.type.colour.exterior+" car, " + aCar.type.milage +" milage, with "  + aCar.type.colour.interior.texture + " interior.");
+console.log('First owner is '+ aCar.privious_owners[0]);
